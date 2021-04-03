@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Library</title>
+</head>
+<body>
+  <h1>Library</h1>
+
+  <main class="main">
+  <button class="new-book-button">New book</button> <!--  Este es mi boton para activar el popUp -->
+  <div class="bookshelf">
+  
+
+ <!--    <div class="libro"> // esto lo voy a rerendizar con JS.
+      <h2>El Alquimista</h2>
+      <p>Pauolo Cohelo</p>
+      <p>250 Paginas</p>
+      <label for="">IsRead?<input type="checkbox" ></label>
+      <button>Remove</button>
+    </div> -->
+
+    </div>
+  </div> <!-- We're going to render our new books -->
+  </main>
+
+  <div class="container">
+    <form class="popup-form" >
+      
+      <h3>Add new book</h3>
+
+      <input type="text" id="title" class="popup__input" placeholder="Title" required>
+      <input type="text" id="author" class="popup__input" placeholder="Author" required>
+      <input type="number" id ="pages" class="popup__input" placeholder="Pages" required>
+
+          <div class="popup_isRead">
+          <label class="IsRead?_Label" for="is-read">Read?</label>
+          <input class="popup__checkbox" type="checkbox" id="is-read" />
+        </div>
+
+        <button class="submitButton">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
